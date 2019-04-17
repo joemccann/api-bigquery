@@ -41,7 +41,6 @@ Or in the case there is a failure:
 curl https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-bigquery --data '{"dataset": "my_dataset"}' -H "Content-Type: application/json"
 
 # Create Table
-
 curl https://${DEFAULT_REGION}-${PROJECT}.cloudfunctions.net/api-bigquery --data '{"dataset": "my_dataset", "tableName": "my_table", "create": {"options": { "schema": "Name:string, Age:integer, Weight:float, IsTall:boolean", "location": "US" }}}' -H "Content-Type: application/json"
 
 # Insert Rows
